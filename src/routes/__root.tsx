@@ -3,6 +3,8 @@ import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
 import { TanStackDevtools } from '@tanstack/react-devtools'
 
 import appCss from '../styles.css?url'
+import { ThemeProvider } from '@/components/theme-provider'
+import Header from '@/components/header'
 
 export const Route = createRootRoute({
   head: () => ({
@@ -24,6 +26,11 @@ export const Route = createRootRoute({
         href: appCss,
       },
     ],
+    scripts: [
+      {
+        src: '/theme-init.js',
+      },
+    ],
   }),
 
   shellComponent: RootDocument,
@@ -31,12 +38,17 @@ export const Route = createRootRoute({
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <HeadContent />
       </head>
+
       <body>
-        {children}
+        {' '}
+        <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+          <Header />
+          {children}
+        </ThemeProvider>
         <TanStackDevtools
           config={{
             position: 'bottom-right',

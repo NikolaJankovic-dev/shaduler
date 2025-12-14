@@ -1,0 +1,243 @@
+[
+  {
+    "date": "2025-12-14",
+    "work_places": [
+      {
+        "id": 1,
+        "label": "Radno mesto 1",
+        "tasks": [
+          {
+            "id": 1,
+            "name": "Task 1",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "status": "approved"
+          },
+          {
+            "id": 2,
+            "name": "Task 2",
+            "start_time": "10:00",
+            "end_time": "11:30",
+            "status": "pending"
+          },
+          {
+            "id": 3,
+            "name": "Task 3",
+            "start_time": "08:00",
+            "end_time": "09:15",
+            "status": "approved"
+          },
+          {
+            "name": "test task",
+            "start_time": "08:00",
+            "end_time": "00:00",
+            "status": "pending",
+            "id": 4
+          },
+          {
+            "name": "test",
+            "start_time": "08:00",
+            "end_time": "00:00",
+            "status": "pending",
+            "id": 5
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "label": "Radno mesto 2",
+        "tasks": [
+          {
+            "id": 4,
+            "name": "Task 4",
+            "start_time": "12:00",
+            "end_time": "13:00",
+            "status": "rejected"
+          },
+          {
+            "id": 5,
+            "name": "Task 5",
+            "start_time": "14:00",
+            "end_time": "15:00",
+            "status": "approved"
+          },
+          {
+            "id": 6,
+            "name": "Task 6",
+            "start_time": "16:00",
+            "end_time": "17:00",
+            "status": "pending"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "label": "Radno mesto 3",
+        "tasks": [
+          {
+            "id": 7,
+            "name": "Task 7",
+            "start_time": "18:00",
+            "end_time": "19:00",
+            "status": "approved"
+          },
+          {
+            "id": 8,
+            "name": "Task 8",
+            "start_time": "20:00",
+            "end_time": "21:00",
+            "status": "rejected"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2025-12-15",
+    "work_places": [
+      {
+        "id": 1,
+        "label": "Radno mesto 1",
+        "tasks": [
+          {
+            "id": 1,
+            "name": "Task 1",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "status": "pending"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "label": "Radno mesto 2",
+        "tasks": [
+          {
+            "id": 2,
+            "name": "Task 2",
+            "start_time": "10:00",
+            "end_time": "11:30",
+            "status": "approved"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "label": "Radno mesto 3",
+        "tasks": [
+          {
+            "id": 3,
+            "name": "Task 3",
+            "start_time": "08:00",
+            "end_time": "09:15",
+            "status": "rejected"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2025-12-16",
+    "work_places": [
+      {
+        "id": 1,
+        "label": "Radno mesto 1",
+        "tasks": [
+          {
+            "id": 1,
+            "name": "Task 1",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "status": "approved"
+          },
+          {
+            "name": "test task",
+            "start_time": "10:00",
+            "end_time": "00:00",
+            "status": "pending",
+            "id": 2
+          },
+          {
+            "name": "ewrwe",
+            "start_time": "09:00",
+            "end_time": "11:00",
+            "status": "pending",
+            "id": 3
+          },
+          {
+            "name": "test",
+            "start_time": "08:00",
+            "end_time": "11:00",
+            "status": "rejected",
+            "id": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2025-12-17",
+    "work_places": [
+      {
+        "id": 1,
+        "label": "Radno mesto 1",
+        "tasks": [
+          {
+            "id": 1,
+            "name": "Task 1",
+            "start_time": "09:00",
+            "end_time": "10:30",
+            "status": "approved"
+          },
+          {
+            "id": 2,
+            "name": "Task 2",
+            "start_time": "11:00",
+            "end_time": "12:00",
+            "status": "pending"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "label": "Radno mesto 2",
+        "tasks": [
+          {
+            "id": 3,
+            "name": "Task 3",
+            "start_time": "13:00",
+            "end_time": "14:30",
+            "status": "approved"
+          },
+          {
+            "id": 4,
+            "name": "Task 4",
+            "start_time": "15:00",
+            "end_time": "16:00",
+            "status": "rejected"
+          },
+          {
+            "id": 5,
+            "name": "Task 5",
+            "start_time": "16:30",
+            "end_time": "17:30",
+            "status": "pending"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "label": "Radno mesto 3",
+        "tasks": [
+          {
+            "id": 6,
+            "name": "Task 6",
+            "start_time": "18:00",
+            "end_time": "19:30",
+            "status": "approved"
+          }
+        ]
+      }
+    ]
+  }
+]
