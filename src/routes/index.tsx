@@ -17,7 +17,7 @@ import {
   type ShadulerColumn,
 } from '@/components/shaduler'
 import { Button } from '@/components/ui/button'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Plus } from 'lucide-react'
 import { useState, useEffect } from 'react'
 import { ButtonGroup, ButtonGroupText } from '@/components/ui/button-group'
 import { AddTaskDialog } from '@/components/add-task-dialog'
@@ -159,8 +159,8 @@ function App() {
 
   // Kalkulacije - koristimo iste startTime i endTime kao u ShadulerTimeColumn
   const hourHeight = 60
-  const startTime = 8
-  const endTime = 19
+  const startTime = 0
+  const endTime = 23
   const calculations = calculateShadulerData(
     columns,
     tasks,
@@ -272,6 +272,14 @@ function App() {
                     gridRow: '1 / 3',
                   }}
                 >
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="h-8 w-8"
+                    onClick={() => setDialogOpen(true)}
+                  >
+                    <Plus className="h-4 w-4" />
+                  </Button>
                   <AddTaskDialog 
                     onTaskAdded={async () => {
                       // Refresh data nakon dodavanja taska
@@ -287,7 +295,7 @@ function App() {
                       setDialogOpen(false)
                     }}
                     open={dialogOpen}
-                    onOpenChange={setDialogOpen}
+                    onOpenChange={setDialogOpen} 
                     defaultDate={dialogDefaults.date}
                     defaultWorkPlace={dialogDefaults.workPlace}
                     defaultStartTime={dialogDefaults.startTime}
@@ -308,6 +316,14 @@ function App() {
                 gridTemplateColumns={calculations.gridTemplateColumns}
               >
                 <ShadulerCorner className="flex items-center justify-center backdrop-blur-2xl">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="h-8 w-8"
+                    onClick={() => setDialogOpen(true)}
+                  >
+                    <Plus className="h-4 w-4" />
+                  </Button>
                   <AddTaskDialog 
                     onTaskAdded={async () => {
                       // Refresh data nakon dodavanja taska
